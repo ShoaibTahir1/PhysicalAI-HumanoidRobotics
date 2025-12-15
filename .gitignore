@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+
+# Production builds
+build/
+
+# Environment variables
+.env*
+!.env.example
+
+# IDE specific
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Coverage
+coverage/
+.nyc_output
+
+# Docusaurus
+.docusaurus/
+
+# Temporary files
+*.tmp
+*.bak
+
+# Package manager
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
