@@ -9,9 +9,9 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-vercel-domain.vercel.app',
+  url: 'https://your-domain.com',  // Replace with your actual domain
   // Set the /<baseUrl>/ pathname under which your site is served
-  // For Vercel deployment, this is usually /
+  // For self-hosting, this is usually /
   baseUrl: '/',
 
   // GitHub pages deployment config.
