@@ -9,9 +9,9 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-domain.com',  // Replace with your actual domain
+  url: 'https://ShoaibTahir1.github.io',  // Using GitHub Pages URL
   // Set the /<baseUrl>/ pathname under which your site is served
-  // For self-hosting, this is usually /
+  // For GitHub Pages, this is usually /<project-name>/, but / works for custom domains
   baseUrl: '/',
 
   // GitHub pages deployment config.
