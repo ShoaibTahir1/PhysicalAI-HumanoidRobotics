@@ -8,12 +8,6 @@ const config = {
   tagline: 'An Educational Book on How Digital Brains Control Physical Bodies',
   favicon: 'img/favicon.ico',
 
-  // Set the production url of your site here
-  url: 'https://your-vercel-domain.vercel.app',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For Vercel deployment, this is usually /
-  baseUrl: '/',
-
   // GitHub pages deployment config.
   organizationName: 'ShoaibTahir1', // Usually your GitHub org/user name.
   projectName: 'PhysicalAI-HumanoidRobotics', // Usually your repo name.
