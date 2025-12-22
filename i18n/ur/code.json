@@ -364,5 +364,61 @@
   "theme.tags.tagsPageTitle": {
     "message": "Tags",
     "description": "The title of the tag list page"
+  },
+  "homepage.title": {
+    "message": "ہیلو {siteTitle} سے",
+    "description": "The title of the homepage"
+  },
+  "homepage.description": {
+    "message": "ڈیجیٹل دماغوں کے بارے میں ایک تعلیمی کتاب جو جسمانی اجسام کو کنٹرول کرتے ہیں",
+    "description": "Description of the educational book"
+  },
+  "homepage.readBookButton": {
+    "message": "کتاب پڑھیں - 5 منٹ ⏱️",
+    "description": "Button text to read the book"
+  },
+  "homepage.physicalAI.title": {
+    "message": "فزیکل AI",
+    "description": "Title for Physical AI section"
+  },
+  "homepage.physicalAI.imageAlt": {
+    "message": "فیزیکل AI",
+    "description": "Alt text for Physical AI image"
+  },
+  "homepage.physicalAI.description": {
+    "message": "جانیں کہ مصنوعی ذہانت جسمانی نظام اور روبوٹس کو کیسے کنٹرول کرتی ہے",
+    "description": "Description for Physical AI section"
+  },
+  "homepage.humanoidRobotics.title": {
+    "message": "ہیومنوڈ روبوٹکس",
+    "description": "Title for Humanoid Robotics section"
+  },
+  "homepage.humanoidRobotics.imageAlt": {
+    "message": "ہیومنوڈ روبوٹکس",
+    "description": "Alt text for Humanoid Robotics image"
+  },
+  "homepage.humanoidRobotics.description": {
+    "message": "سمجھیں کہ انسان نما ساخت والے روبوٹس کیسے کام کرتے ہیں اور حرکت کرتے ہیں",
+    "description": "Description for Humanoid Robotics section"
+  },
+  "homepage.educationalFocus.title": {
+    "message": "تعلیمی مرکز",
+    "description": "Title for Educational Focus section"
+  },
+  "homepage.educationalFocus.imageAlt": {
+    "message": "تعلیمی مرکز",
+    "description": "Alt text for Educational Focus image"
+  },
+  "homepage.educationalFocus.description": {
+    "message": "ابتدائی صارفین کے لیے تیار کیا گیا سادہ زبان اور حقیقی زندگی کی مثالوں کے ساتھ",
+    "description": "Description for Educational Focus section"
+  },
+  "theme.navbar.title": {
+    "message": "فزیکل AI اور ہیومنوڈ روبوٹکس",
+    "description": "The title in the navbar"
+  },
+  "theme.navbar.subtitle": {
+    "message": "ڈیجیٹل دماغوں کے بارے میں ایک تعلیمی کتاب جو جسمانی اجسام کو کنٹرول کرتے ہیں",
+    "description": "The tagline/subtitle in the navbar"
   }
 }
