@@ -14,5 +14,9 @@
   "logo.alt": {
     "message": "فزیکل AI اور ہیومنوڈ روبوٹکس لوگو",
     "description": "The alt text of navbar logo"
+  },
+  "subtitle": {
+    "message": "ڈیجیٹل دماغوں کے بارے میں ایک تعلیمی کتاب جو جسمانی اجسام کو کنٹرول کرتے ہیں",
+    "description": "The tagline/subtitle in the navbar"
   }
 }
