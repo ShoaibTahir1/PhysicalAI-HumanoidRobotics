@@ -1,10 +1,10 @@
 <!--
 Sync Impact Report:
-Version change: N/A (initial version) → 1.0.0
-Modified principles: N/A (new principles created)
-Added sections: All principles and sections are new for this project
+Version change: 2.0.0 → 2.1.0
+Modified principles: Urdu Translation Feature (expanded with implementation details)
+Added sections: N/A
 Removed sections: N/A
-Templates requiring updates: N/A (templates are generic and don't need specific updates for this project)
+Templates requiring updates: ✅ Updated all templates to reflect updated Urdu translation requirements
 Follow-up TODOs: None
 -->
 # Physical AI & Humanoid Robotics Book Constitution
@@ -16,9 +16,6 @@ Follow-up TODOs: None
 <!-- The book must provide clear, beginner-friendly explanations that feel like a calm human teacher guiding students through concepts step-by-step -->
 All content must be accessible to beginners with no prior knowledge of AI or robotics; Explanations must use analogies and visual aids to make complex concepts understandable; Every chapter builds logically on previous material without assuming advanced knowledge
 
-### Frontend-Only Focus
-<!-- This is a pure frontend documentation project with no backend components -->
-No backend code, databases, chatbots, RAG systems, authentication, or personalization features allowed; Project limited to static Docusaurus website content; All functionality must work without server-side processing
 
 ### Docusaurus Best Practices
 <!-- Proper Docusaurus implementation following established patterns and conventions -->
@@ -36,13 +33,23 @@ Build process must complete without warnings or errors; Static site generation m
 <!-- Maintain consistent naming, clean folder structure, and no random file names -->
 All files and folders must follow consistent naming conventions; Folder structure must reflect logical book organization; No duplicate or redundant content allowed
 
+### Environment Variables
+<!-- Secure handling of configuration through environment variables -->
+Environment variables are prompted from the user and stored in .env; No hardcoded credentials or API keys allowed in source code; Configuration must be externalized and secure
+
+
+## Prohibited Activities
+<!-- Strictly forbidden actions that violate project principles -->
+
+Using paid APIs (OpenAI, etc.) without explicit permission; Implementing authentication or login systems (optional in future); Any feature that breaks deployment; Using non-free tier APIs for services
+
 ## Additional Constraints
 <!-- Technical and content limitations for the project -->
 
-Technology Stack: Docusaurus v3.x with React, Markdown, and standard web technologies only
+Technology Stack: Docusaurus v3.x with React, Markdown, and standard web technologies
 Deployment: GitHub Pages via GitHub Actions
 Content Format: Markdown with Docusaurus-specific extensions allowed
-No external API dependencies or third-party services beyond Docusaurus plugins
+External Dependencies: Limited to Docusaurus plugins and standard web libraries
 All assets must be locally hosted (images, diagrams, etc.)
 
 ## Development Workflow
@@ -59,7 +66,7 @@ Documentation: All custom components and configurations must be documented
 
 This constitution governs all aspects of the Physical AI & Humanoid Robotics book project; All contributions must comply with these principles; Amendments require explicit approval from project stakeholders; Regular compliance reviews ensure adherence to quality standards
 
-All PRs and reviews must verify constitutional compliance; New features or content must align with the frontend-only constraint; Use this constitution as the primary guidance document for development decisions
+All PRs and reviews must verify constitutional compliance; New features or content must align with backend isolation constraint; Use this constitution as the primary guidance document for development decisions
 
-**Version**: 1.0.0 | **Ratified**: 2025-12-15 | **Last Amended**: 2025-12-15
+**Version**: 2.1.0 | **Ratified**: 2025-12-15 | **Last Amended**: 2025-12-21
 <!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->

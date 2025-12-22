@@ -4,133 +4,130 @@ sidebar_position: 13
 
 # Glossary
 
-This glossary provides definitions for key terms used throughout the Physical AI & Humanoid Robotics book.
+![Robotics Glossary](/img/chapters/glossary-robotics.jpg)
+
+A comprehensive reference of key terms used throughout this book on Physical AI and Humanoid Robotics.
 
 ## A
 
-**Actuator**: A component that converts energy into physical motion, essentially the "muscles" of a robot that enable movement.
+**Actuator**: A component of a robot that converts energy into physical motion. Common types include servo motors, stepper motors, and hydraulic/pneumatic actuators.
 
-**AI (Artificial Intelligence)**: Computer systems designed to perform tasks that typically require human intelligence, such as learning, problem-solving, and decision-making.
+**AI (Artificial Intelligence)**: Computer systems designed to perform tasks that typically require human intelligence, such as learning, reasoning, problem-solving, perception, and language understanding.
 
-**Autonomous**: Operating independently without human intervention, making decisions based on internal programming and sensor input.
+**Autonomous**: Operating independently without human intervention. An autonomous robot can make decisions and perform tasks without direct human control.
 
 ## B
 
-**Balance Control**: Systems and algorithms that maintain a robot's stability, particularly important for bipedal robots.
+**Balance Control**: Systems and algorithms that maintain a robot's stability, particularly important for bipedal robots that must manage their center of gravity over a small support base.
 
-**Behavior-Based Robotics**: An approach to robotics that structures robot control as a collection of behaviors that interact with each other.
+**Bipedal**: Having two legs, referring to robots that walk on two legs like humans.
 
 ## C
 
-**Degrees of Freedom (DOF)**: The number of independent movements a robot or joint can make. A human arm has more degrees of freedom than a simple hinge joint.
+**Center of Gravity (CoG)**: The point where the total weight of an object is considered to be concentrated. In humanoid robots, keeping the CoG within the support polygon is crucial for balance.
 
-**Dynamics**: The study of forces and torques that cause motion in mechanical systems.
+**Control System**: The algorithms and mechanisms that process sensor data and generate commands to robot actuators to achieve desired behaviors.
+
+**Cognitive Robotics**: A field combining robotics with cognitive science to create robots with human-like cognitive abilities.
+
+## D
+
+**Degrees of Freedom (DOF)**: The number of independent movements a mechanical system can make. A humanoid robot's arm might have 7 DOF to match human arm flexibility.
+
+**Dexterous Manipulation**: The ability to skillfully handle and manipulate objects with fine motor control, similar to human hand capabilities.
 
 ## E
 
-**Embodied AI**: Artificial intelligence that interacts with the physical world through a body, learning and making decisions based on physical interaction.
+**Embodied AI**: Artificial intelligence that exists within a physical body and interacts with the real world, as opposed to purely virtual AI systems.
 
-**Embodied Cognition**: The theory that cognitive processes are deeply rooted in the body's interactions with the world.
+**Embodied Intelligence**: Intelligence that emerges from the interaction between an AI system and its physical environment, where the body plays an active role in cognition.
 
-**End-Effector**: The tool or device at the end of a robotic arm designed to interact with the environment, such as a gripper or tool.
+**End Effector**: The tool or device at the end of a robot arm that interacts with the environment, such as a gripper, hand, or specialized tool.
 
 ## F
 
-**Forward Kinematics**: The process of determining the position of a robot's end-effector based on the angles of its joints.
+**Forward Kinematics**: Calculating the position and orientation of a robot's end effector based on the joint angles of its arm.
 
-**Force Control**: A control strategy that regulates the forces applied by a robot rather than just its position.
+**Fuzzy Logic**: A form of logic that deals with reasoning that is approximate rather than fixed and exact, useful for handling uncertainty in robotics.
 
 ## G
 
-**Gait**: The pattern of limb movements used by a walking robot, analogous to how humans and animals walk.
+**Gait**: The pattern of movement of the limbs during locomotion. For humanoid robots, this refers to their walking pattern.
 
-**Gazebo**: A popular 3D simulation environment for robotics that provides accurate physics simulation and rendering.
+**Gazebo**: A 3D simulation environment used for robotics development and testing.
 
 ## H
 
-**Humanoid Robot**: A robot designed with a human-like body structure, typically featuring a head, torso, two arms, and two legs.
+**Humanoid Robot**: A robot with a human-like body structure, typically featuring a head, torso, two arms, and two legs.
 
-**Human-Robot Interaction (HRI)**: The study of interactions between humans and robots, including communication, collaboration, and social dynamics.
+**Human-Robot Interaction (HRI)**: The study of interactions between humans and robots, including communication, cooperation, and social aspects.
 
 ## I
 
-**Inverse Kinematics**: The process of determining the joint angles needed to achieve a desired end-effector position.
+**Inverse Kinematics**: Calculating the joint angles required to position a robot's end effector at a desired location and orientation.
 
-**IRL (Inverse Reinforcement Learning)**: Learning the reward function from expert demonstrations, rather than learning the policy directly.
+**IR Sensor**: Infrared sensor used for proximity detection, distance measurement, and object detection.
 
-## J
-
-**Joint**: A connection between two or more links in a robot that allows for relative motion between them.
-
-## K
-
-**Kinematics**: The study of motion without considering the forces that cause it, focusing on position, velocity, and acceleration.
+**Imu (Inertial Measurement Unit)**: A device that measures and reports a body's specific force, angular rate, and sometimes the magnetic field surrounding the body.
 
 ## L
 
-**LiDAR (Light Detection and Ranging)**: A sensing technology that uses laser light to measure distances and create 3D maps of the environment.
+**LIDAR**: Light Detection and Ranging - a remote sensing method that uses light in the form of a pulsed laser to measure distances.
 
-**Locomotion**: The ability to move from one place to another, a key capability for mobile robots.
+**Locomotion**: The ability to move from one place to another, particularly challenging for humanoid robots due to balance requirements.
 
 ## M
 
-**Machine Learning**: A subset of AI that enables systems to learn and improve from experience without being explicitly programmed for every task.
+**Machine Learning**: A subset of AI that enables systems to learn and improve from experience without being explicitly programmed.
 
-**Manipulation**: The ability of a robot to physically interact with objects in its environment, typically using arms and hands.
+**Manipulation**: The ability to handle, move, or control objects in the environment, typically using robot arms and hands.
 
-**Mobile Robot**: A robot that can move around in its environment, as opposed to stationary robots.
-
-## N
-
-**Navigation**: The process of planning and executing movement through an environment, including path planning and obstacle avoidance.
+**Motor Controller**: An electronic device that controls the speed, power, and direction of electric motors in a robot.
 
 ## P
 
-**Path Planning**: The process of determining a route for a robot to follow from its current location to a goal location.
+**Path Planning**: The computational process of determining a route for a robot to follow from a starting point to a destination.
 
-**PID Controller**: A control loop feedback mechanism that uses Proportional, Integral, and Derivative terms to minimize error.
+**Perception**: The process by which robots interpret sensory information to understand their environment.
 
-**Perception**: The process by which robots interpret sensory information from their environment to understand their surroundings.
+**PID Controller**: Proportional-Integral-Derivative controller - a control loop mechanism widely used in robotics for precise control.
 
 ## R
 
-**Reinforcement Learning**: A type of machine learning where an agent learns to make decisions by receiving rewards or penalties for its actions.
+**ROS (Robot Operating System)**: A flexible framework for writing robot software, providing operating system-like functionality on a network of processes.
 
-**Robotics**: The interdisciplinary field that combines engineering and computer science to design, construct, operate, and use robots.
+**Redundancy**: Having more degrees of freedom than strictly necessary to perform a task, providing flexibility in movement and obstacle avoidance.
 
-**ROS (Robot Operating System)**: A flexible framework for writing robot software that provides hardware abstraction, device drivers, and communication between processes.
+**Reinforcement Learning**: A type of machine learning where an agent learns to make decisions by performing actions and receiving rewards or penalties.
 
 ## S
 
-**Sensor**: A device that detects and responds to physical inputs from the environment, such as light, heat, motion, or pressure.
+**Sensor Fusion**: Combining data from multiple sensors to achieve better accuracy and reliability than could be achieved by using a single sensor.
 
 **SLAM (Simultaneous Localization and Mapping)**: The computational problem of constructing or updating a map of an unknown environment while simultaneously keeping track of an agent's location within it.
 
-**State Machine**: A computational model used to design algorithms that can be in exactly one of a finite number of states at any given time.
+**Servo Motor**: A rotary or linear actuator that allows for precise control of angular or linear position, velocity, and acceleration.
 
-**Swarm Robotics**: The coordination of multiple robots to work together to accomplish tasks.
+**Stability**: The ability of a robot to maintain balance and resist falling over during operation.
 
 ## T
 
-**Trajectory Planning**: The process of determining the path, velocity, and acceleration profiles for robot movement over time.
+**Torque**: A rotational force that causes rotation around an axis, important for robot joint control.
 
-**Torque Control**: A control strategy that regulates the rotational force applied by a robot's joints.
+**Trajectory Planning**: The process of determining the path and timing of movement for a robot's joints or end effector.
+
+**Tactile Sensor**: A sensor that detects touch, pressure, or force, important for safe human-robot interaction.
 
 ## U
 
-**URDF (Unified Robot Description Format)**: An XML-based format for representing robot models, including their physical and visual properties.
+**URDF (Unified Robot Description Format)**: An XML format for representing a robot model, including kinematic and dynamic information.
 
-## V
+**Ultrasonic Sensor**: A sensor that uses sound waves above the human hearing range to measure distances and detect objects.
 
-**Visual Servoing**: Control of robot motion based on visual feedback from cameras.
+## Z
 
-## W
-
-**Walking Pattern**: The coordinated sequence of leg movements used by bipedal robots to achieve locomotion.
-
-**Whole-Body Control**: Control strategies that consider the entire robot body when planning and executing movements.
+**ZMP (Zero Moment Point)**: A criterion for dynamic stability of a robot, representing a point where the sum of all moments of the active forces equals zero.
 
 ---
-
 **Previous Chapter**: [Future of Humanoid Robotics](./future-humanoid-robotics.md)
 **Next Chapter**: [Final Summary](./final-summary.md)
