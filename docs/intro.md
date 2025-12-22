@@ -26,6 +26,3 @@ Imagine you're learning to ride a bicycle. Your brain (the AI) processes informa
 
 In this book, we'll explore how digital brains control physical bodies, from simple sensors to complex humanoid robots. We'll look at how robots sense their world, make decisions, and take actions in the physical space around them.
 
----
-
-**Next Chapter**: [What Is Embodied Intelligence?](./embodied-intelligence.md)

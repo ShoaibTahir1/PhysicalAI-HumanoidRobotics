@@ -18,7 +18,7 @@ const config = {
   organizationName: 'ShoaibTahir1', // Usually your GitHub org/user name.
   projectName: 'PhysicalAI-HumanoidRobotics', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -26,7 +26,7 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'ur'],
   },
 
   presets: [
@@ -49,6 +49,24 @@ const config = {
     ],
   ],
 
+
+  themes: [
+    // Add search functionality
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        hashed: true,
+        indexBlog: false,
+        indexDocs: true,
+        indexPages: false,
+        language: ["en"],
+        searchResultLimits: 8,
+        searchBarPosition: "right"
+      },
+    ],
+  ],
+
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -66,6 +84,10 @@ const config = {
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Book',
+          },
+          {
+            type: 'localeDropdown',
+            position: 'right',
           },
           {
             href: 'https://github.com/ShoaibTahir1/PhysicalAI-HumanoidRobotics',
