@@ -1,4 +1,4 @@
-// @ts-check
+\// @ts-check
 // `@type` JSDoc annotations allow IDEs and type-checking tools to autocomplete
 // and validate type definitions, making code easier to understand and maintain.
 
