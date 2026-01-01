@@ -19,7 +19,11 @@ const config = {
   projectName: 'PhysicalAI-HumanoidRobotics', // Usually your repo name.
 
   onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    }
+  },
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -27,6 +31,13 @@ const config = {
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'ur'],
+    localeConfigs: {
+      ur: {
+        direction: 'rtl',
+        htmlLang: 'ur',
+        label: 'اردو',
+      },
+    },
   },
 
   presets: [
@@ -100,11 +111,31 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Book',
+            title: 'Modules',
             items: [
               {
-                label: 'Introduction',
-                to: '/docs/intro',
+                label: 'Module 1: The Robotic Nervous System (ROS 2)',
+                to: '/docs/module-1/intro-to-physical-ai',
+              },
+              {
+                label: 'Module 2: The Digital Twin (Gazebo & Unity)',
+                to: '/docs/module-2/gazebo-physics',
+              },
+              {
+                label: 'Module 3: The AI-Robot Brain (NVIDIA Isaac)',
+                to: '/docs/module-3/isaac-sim-overview',
+              },
+              {
+                label: 'Module 4: Vision-Language-Action (VLA)',
+                to: '/docs/module-4/llms-in-robotics',
+              },
+              {
+                label: 'Module 5: Hardware, Labs & Deployment',
+                to: '/docs/module-5/rtx-workstations',
+              },
+              {
+                label: 'Module 6: Capstone Project',
+                to: '/docs/module-6/capstone-architecture',
               },
             ],
           },

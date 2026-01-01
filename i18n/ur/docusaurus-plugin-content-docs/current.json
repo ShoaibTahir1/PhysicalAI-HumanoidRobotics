@@ -4,7 +4,31 @@
     "description": "The label for version current"
   },
   "sidebar.tutorialSidebar.category.Physical AI & Humanoid Robotics": {
-    "message": "Physical AI & Humanoid Robotics",
+    "message": "فزیکل AI اور ہیومنوڈ روبوٹکس",
     "description": "The label for category 'Physical AI & Humanoid Robotics' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Module 1: The Robotic Nervous System (ROS 2)": {
+    "message": "ماڈیول 1: روبوٹک اعصابی نظام (ROS 2)",
+    "description": "The label for category 'Module 1: The Robotic Nervous System (ROS 2)' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Module 2: The Digital Twin (Gazebo & Unity)": {
+    "message": "ماڈیول 2: ڈیجیٹل ٹوئن (Gazebo اور Unity)",
+    "description": "The label for category 'Module 2: The Digital Twin (Gazebo & Unity)' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Module 3: The AI-Robot Brain (NVIDIA Isaac)": {
+    "message": "ماڈیول 3: اے آئی روبوٹ دماغ (NVIDIA Isaac)",
+    "description": "The label for category 'Module 3: The AI-Robot Brain (NVIDIA Isaac)' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Module 4: Vision-Language-Action (VLA)": {
+    "message": "ماڈیول 4: وژن-لینگویج-ایکشن (VLA)",
+    "description": "The label for category 'Module 4: Vision-Language-Action (VLA)' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Module 5: Hardware, Labs & Deployment": {
+    "message": "ماڈیول 5: ہارڈ ویئر، لیبز اور تعیناتی (Hardware, Labs & Deployment)",
+    "description": "The label for category 'Module 5: Hardware, Labs & Deployment' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Module 6: Capstone Project": {
+    "message": "ماڈیول 6: کیپ اسٹون پروجیکٹ (Capstone Project)",
+    "description": "The label for category 'Module 6: Capstone Project' in sidebar 'tutorialSidebar'"
   }
 }

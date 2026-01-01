@@ -35,3 +35,104 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* ==========================================================================
+   Urdu (RTL) Support
+   ========================================================================== */
+
+/* Set RTL direction for Urdu locale */
+html[lang='ur'] {
+  direction: rtl;
+  text-align: right;
+}
+
+/* RTL-specific overrides for Urdu */
+html[lang='ur'] .navbar__items {
+  flex-direction: row-reverse;
+}
+
+html[lang='ur'] .navbar__brand {
+  margin-right: 0;
+  margin-left: var(--ifm-navbar-item-padding-horizontal);
+}
+
+html[lang='ur'] .navbar__title {
+  text-align: right;
+}
+
+html[lang='ur'] .menu__link {
+  text-align: right;
+}
+
+html[lang='ur'] .menu__link--active {
+  border-right: none;
+  border-left: 4px solid var(--ifm-color-primary);
+}
+
+html[lang='ur'] .docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-theme-Doc-Sidebar-styles-module {
+  border-right: none;
+  border-left: 1px solid var(--ifm-color-emphasis-200);
+}
+
+html[lang='ur'] .docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
+  padding-left: 0;
+  padding-right: var(--ifm-spacing-horizontal);
+}
+
+html[lang='ur'] .pagination-nav {
+  flex-direction: row-reverse;
+}
+
+html[lang='ur'] .admonition {
+  text-align: right;
+}
+
+/* Urdu font support */
+html[lang='ur'] {
+  --ifm-font-family-base: 'Noto Sans Arabic', 'Noto Sans', system-ui, -apple-system, sans-serif;
+}
+
+html[lang='ur'] h1, html[lang='ur'] h2, html[lang='ur'] h3,
+html[lang='ur'] h4, html[lang='ur'] h5, html[lang='ur'] h6 {
+  font-family: 'Noto Sans Arabic', 'Noto Sans', system-ui, -apple-system, sans-serif;
+}
+
+/* RTL-specific card adjustments */
+html[lang='ur'] .card {
+  text-align: right;
+}
+
+/* RTL alert/notification positioning */
+html[lang='ur'] .alert {
+  border-right: none;
+  border-left: 4px solid var(--ifm-alert-border-color);
+}
+
+/* Fix for dropdown menus in RTL */
+html[lang='ur'] .dropdown__menu {
+  left: 0;
+  right: auto;
+}
+
+html[lang='ur'] .dropdown--right .dropdown__menu {
+  left: auto;
+  right: 0;
+}
+
+/* Search bar RTL adjustments */
+html[lang='ur'] .navbar__search-input {
+  padding-left: 2.5rem;
+  padding-right: 1rem;
+}
+
+/* Breadcrumb RTL adjustments */
+html[lang='ur'] .breadcrumbs {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+/* TOC RTL adjustments */
+html[lang='ur'] .tableOfContents_node_modules-\@docusaurus-theme-classic-lib-theme-TOC-styles-module {
+  padding-left: 0;
+  padding-right: var(--ifm-spacing-horizontal);
+}

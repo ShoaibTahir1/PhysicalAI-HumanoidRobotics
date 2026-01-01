@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git checkout:*)",
+      "Bash(npm run build:*)",
+      "Bash(powershell -ExecutionPolicy Bypass -File \".specify/scripts/powershell/setup-plan.ps1\")",
+      "Bash(ls -la \"C:\\\\Users\\\\Shoaib Tahir\\\\Desktop\\\\PhysicalAI-HumanoidRobotics\\\\specs\\\\feature\\\\physical-ai-humanoid-robotics-book\"\" 2>&1 || echo \"Directory not found \")",
+      "Bash(powershell:*)",
+      "Bash(git rev-parse:*)",
+      "Bash(if not exist \"scripts\" mkdir \"scripts\")",
+      "Bash(grep -A 5 -B 5 \"آرکیٹیکچر ڈایاگرام\" i18n/ur/docusaurus-plugin-content-docs/current/module-*/ -r --include=\"*.md\")",
+      "Bash(npm run build)",
+      "Bash(ls -la docs/module-*/)",
+      "Bash(ls -la docs/*.md)",
+      "Bash(npx serve build)",
+      "Bash(timeout 5 curl -s http://localhost:3000)",
+      "Bash(npm run serve)",
+      "Bash(npx docusaurus serve --port 4000)",
+      "Bash(curl -s http://localhost:4000)"
+    ]
+  }
+}

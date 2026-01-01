@@ -1,223 +1,351 @@
 ---
-description: "Task list for Docusaurus Book - Physical AI & Humanoid Robotics implementation"
+description: "Task list for Docusaurus Book - Physical AI & Humanoid Robotics implementation (25 chapters)"
 ---
 
 # Tasks: Docusaurus Book - Physical AI & Humanoid Robotics
 
-**Input**: Design documents from `/specs/01-docusaurus-book/`
-**Prerequisites**: plan.md (required), spec.md (required for user stories), research.md, data-model.md, contracts/
+**Feature Branch**: `feature/physical-ai-humanoid-robotics-book`
+**Generated**: 2025-12-30
+**Plan**: [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md)
 
-**Tests**: The examples below include test tasks. Tests are OPTIONAL - only include them if explicitly requested in the feature specification.
+## Summary
 
-**Organization**: Tasks are grouped by user story to enable independent implementation and testing of each story.
-
-## Format: `[ID] [P?] [Story] Description`
-
-- **[P]**: Can run in parallel (different files, no dependencies)
-- **[Story]**: Which user story this task belongs to (e.g., US1, US2, US3)
-- Include exact file paths in descriptions
-
-## Path Conventions
-
-- **Single project**: `docs/`, `src/`, `static/` at repository root
-- **Web app**: `backend/src/`, `frontend/src/`
-- **Mobile**: `api/src/`, `ios/src/` or `android/src/`
-- Paths shown below assume single project - adjust based on plan.md structure
-
-## Phase 1: Setup (Shared Infrastructure)
-
-**Purpose**: Project initialization and basic structure
-
-- [X] T001 Create Docusaurus project structure with npm init and docusaurus installation
-- [X] T002 [P] Initialize Git repository and configure basic settings
-- [X] T003 [P] Configure basic docusaurus.config.js with site metadata
+| Metric | Value |
+|--------|-------|
+| Total Tasks | 57 |
+| Chapters | 25 (1 intro + 24 in 6 modules) |
+| User Stories | 3 (US1, US2, US3) |
+| Parallel Opportunities | 18 tasks marked [P] |
+| MVP Scope | US1 - Student Learns Physical AI Concepts |
 
 ---
-## Phase 2: Foundational (Blocking Prerequisites)
 
-**Purpose**: Core infrastructure that MUST be complete before ANY user story can be implemented
+## Dependency Graph
 
-**⚠️ CRITICAL**: No user story work can begin until this phase is complete
-
-- [X] T004 Create basic docs/ directory structure for all required chapters
-- [X] T005 [P] Configure sidebars.js with navigation structure for all 14 chapters
-- [X] T006 [P] Setup src/ directory with basic theme customization files
-- [X] T007 Create static/ directory structure for images and assets
-- [X] T008 Configure GitHub Actions workflow for deployment to GitHub Pages
-- [X] T009 Setup basic styling and CSS files in src/css/
-
-**Checkpoint**: Foundation ready - user story implementation can now begin in parallel
-
----
-## Phase 3: User Story 1 - Student Learns Physical AI Concepts (Priority: P1) 🎯 MVP
-
-**Goal**: Enable students to access and read the first chapter about Physical AI with proper navigation
-
-**Independent Test**: Students can access the website, navigate to the first chapter, and read clear, beginner-friendly content about Physical AI
-
-### Implementation for User Story 1
-
-- [X] T010 [P] [US1] Create Introduction to Physical AI chapter in docs/intro.md
-- [X] T011 [P] [US1] Create What Is Embodied Intelligence chapter in docs/embodied-intelligence.md
-- [X] T012 [P] [US1] Create From Software to Physical Motion chapter in docs/software-to-motion.md
-- [X] T013 [US1] Update sidebar navigation to include the first 3 chapters
-- [X] T014 [US1] Add basic content structure with simple English and real-life examples to first 3 chapters
-- [X] T015 [US1] Add internal linking between related concepts in the first 3 chapters
-
-**Checkpoint**: At this point, User Story 1 should be fully functional and testable independently
-
----
-## Phase 4: User Story 2 - Educator Uses Book as Teaching Resource (Priority: P2)
-
-**Goal**: Enable educators to access all chapters and find specific topics using navigation
-
-**Independent Test**: The book provides structured content that educators can reference and integrate into their teaching materials
-
-### Implementation for User Story 2
-
-- [X] T016 [P] [US2] Create Sensors chapter in docs/sensors.md
-- [X] T017 [P] [US2] Create Actuators & Motors chapter in docs/actuators.md
-- [X] T018 [P] [US2] Create Humanoid Robot Structure chapter in docs/humanoid-structure.md
-- [X] T019 [P] [US2] Create Balance, Walking & Posture chapter in docs/balance-walking-posture.md
-- [X] T020 [US2] Update sidebar navigation to include chapters 4-7
-- [ ] T021 [US2] Add search functionality and topic indexing for educator use
-- [ ] T022 [US2] Add cross-references and links between related topics across chapters
-
-**Checkpoint**: At this point, User Stories 1 AND 2 should both work independently
-
----
-## Phase 5: User Story 3 - Developer Explores Implementation Concepts (Priority: P3)
-
-**Goal**: Enable developers to explore technical concepts about AI models controlling robotic bodies
-
-**Independent Test**: The book provides technical depth while maintaining accessibility for developers interested in implementation details
-
-### Implementation for User Story 3
-
-- [X] T023 [P] [US3] Create Understanding URDF chapter in docs/urdf.md
-- [X] T024 [P] [US3] Create AI Models That Control Robotic Bodies chapter in docs/ai-models.md
-- [X] T025 [P] [US3] Create Simulation vs Real-World Robotics chapter in docs/simulation-vs-real-world.md
-- [X] T026 [P] [US3] Create Safety & Ethical Considerations chapter in docs/safety-ethical-considerations.md
-- [X] T027 [P] [US3] Create Future of Humanoid Robotics chapter in docs/future-humanoid-robotics.md
-- [X] T028 [US3] Update sidebar navigation to include chapters 8-12
-- [ ] T029 [US3] Add technical diagrams and implementation examples to relevant chapters
-
-**Checkpoint**: At this point, User Stories 1, 2 AND 3 should all work independently
-
----
-## Phase 6: Final Content Completion
-
-**Goal**: Complete all required content including glossary and final summary
-
-**Independent Test**: All 14 required chapters are complete and accessible with proper navigation
-
-### Implementation for Final Content
-
-- [X] T030 [P] Create Glossary chapter in docs/glossary.md
-- [X] T031 [P] Create Final Summary chapter in docs/final-summary.md
-- [X] T032 Update sidebar navigation to include final 2 chapters (13-14)
-- [X] T033 Add comprehensive internal linking between all chapters
-- [X] T034 Review and refine all content for educational clarity and writing style compliance
-- [X] T035 Ensure all content follows writing style rules: simple English, short paragraphs, real-life examples, friendly teaching tone, no heavy math, no academic complexity
-
-**Checkpoint**: All required content is complete and meets the educational objectives
-
----
-## Phase 7: Polish & Cross-Cutting Concerns
-
-**Purpose**: Improvements that affect multiple user stories
-
-- [X] T036 [P] Add images and diagrams to enhance educational content in static/img/
-- [X] T037 [P] Optimize site for mobile responsiveness and accessibility
-- [X] T038 Performance optimization for fast page loading
-- [X] T039 [P] Add custom styling to match educational brand
-- [X] T040 Test all navigation links for broken links
-- [X] T041 Run quickstart.md validation to ensure deployment works correctly
-- [X] T042 Final content review for consistency and educational quality
-
----
-## Dependencies & Execution Order
-
-### Phase Dependencies
-
-- **Setup (Phase 1)**: No dependencies - can start immediately
-- **Foundational (Phase 2)**: Depends on Setup completion - BLOCKS all user stories
-- **User Stories (Phase 3+)**: All depend on Foundational phase completion
-  - User stories can then proceed in parallel (if staffed)
-  - Or sequentially in priority order (P1 → P2 → P3)
-- **Final Content (Phase 6)**: Depends on all previous user stories being complete
-- **Polish (Phase 7)**: Depends on all content being complete
-
-### User Story Dependencies
-
-- **User Story 1 (P1)**: Can start after Foundational (Phase 2) - No dependencies on other stories
-- **User Story 2 (P2)**: Can start after Foundational (Phase 2) - May integrate with US1 but should be independently testable
-- **User Story 3 (P3)**: Can start after Foundational (Phase 2) - May integrate with US1/US2 but should be independently testable
-- **Final Content (Phase 6)**: Depends on all previous user stories being complete
-
-### Within Each User Story
-
-- Content creation before navigation updates
-- Basic content before internal linking
-- Story complete before moving to next priority
-
-### Parallel Opportunities
-
-- All Setup tasks marked [P] can run in parallel
-- All Foundational tasks marked [P] can run in parallel (within Phase 2)
-- Once Foundational phase completes, all user stories can start in parallel (if team capacity allows)
-- All content files within a story marked [P] can run in parallel
-- Different user stories can be worked on in parallel by different team members
-
----
-## Parallel Example: User Story 1
-
-```bash
-# Launch all content files for User Story 1 together:
-Task: "Create Introduction to Physical AI chapter in docs/intro.md"
-Task: "Create What Is Embodied Intelligence chapter in docs/embodied-intelligence.md"
-Task: "Create From Software to Physical Motion chapter in docs/software-to-motion.md"
+```text
+Phase 1: Setup
+    ↓
+Phase 2: Foundational (Complete)
+    ↓
+Phase 3: US1 - Core Content (Introduction + Modules 1-2: 9 chapters)
+    ↓
+Phase 4: US1 - Core Content (Modules 3-4: 8 chapters)
+    ↓
+Phase 5: US1 - Core Content (Modules 5-6: 8 chapters)
+    ↓
+Phase 6: US2 - Educator Navigation (Sidebar + Search)
+    ↓
+Phase 7: US3 - Developer Content (Technical chapters)
+    ↓
+Phase 8: Polish & Cross-Cutting
 ```
 
 ---
+
+## Phase 1: Project Setup
+
+**Status**: COMPLETE
+
+**Goal**: Initialize Docusaurus project structure and configuration
+
+- [X] T001 Create Docusaurus project structure in repository root
+- [X] T002 Configure docusaurus.config.js with GitHub Pages settings
+- [X] T003 Create sidebars.js with 6 module categories (25 chapter entries)
+- [X] T004 Create module folders: docs/module-1/ through docs/module-6/
+- [X] T005 Create chapter template in docs/template-chapter.md
+- [X] T006 Create GitHub Actions workflow for deployment
+
+---
+
+## Phase 2: Foundational Components
+
+**Status**: COMPLETE
+
+**Goal**: Set up reusable components and styling foundation
+
+- [X] T007 [P] Create custom CSS theme in src/css/custom.css
+- [X] T008 [P] Create HomepageFeatures component in src/components/HomepageFeatures.js
+- [X] T009 [P] Configure navbar and footer in docusaurus.config.js
+- [X] T010 [P] Create static/img/ directory structure
+- [X] T011 Verify build with `npm run build`
+
+---
+
+## Phase 3: US1 - Core Content (Introduction + Modules 1-2)
+
+**Status**: COMPLETE
+
+**Goal**: Create Introduction and first 8 chapters (ROS 2 + Digital Twin)
+
+**Independent Test Criteria**:
+- 9 chapters accessible via sidebar navigation
+- Each chapter has Concept, Architecture, Tools, Goals sections
+- No broken internal links between chapters
+
+### Chapter Writing Tasks
+
+- [x] T012 [US1] Write Introduction chapter in docs/intro.md
+- [x] T013 [US1] Write Module 1 Intro in docs/module-1/intro-to-physical-ai.md
+- [x] T014 [US1] Write ROS 2 Architecture in docs/module-1/ros2-architecture.md
+- [x] T015 [US1] Write Python AI Agents in docs/module-1/python-ai-agents.md
+- [x] T016 [US1] Write Humanoid URDF in docs/module-1/humanoid-urdf.md
+- [x] T017 [US1] Write Gazebo Physics in docs/module-2/gazebo-physics.md
+- [x] T018 [US1] Write URDF vs SDF in docs/module-2/urdf-vs-sdf.md
+- [x] T019 [US1] Write Unity Robotics in docs/module-2/unity-robotics.md
+- [x] T020 [US1] Write Robot Sensors in docs/module-2/robot-sensors.md
+
+### Navigation Setup
+
+- [x] T021 [US1] Update sidebars.js with 10 chapter entries (intro + 9 modules)
+- [ ] T022 [US1] Add next/previous chapter links to all 9 chapters
+
+**Dependencies**: Phase 2 complete
+**Parallel Execution**: T012-T020 can run in parallel (different files)
+
+---
+
+## Phase 4: US1 - Core Content (Modules 3-4)
+
+**Status**: COMPLETE
+
+**Goal**: Create 8 chapters (NVIDIA Isaac + VLA)
+
+**Independent Test Criteria**:
+- 8 additional chapters accessible
+- Total 17 chapters in sidebar
+- All chapters follow template structure
+
+### Chapter Writing Tasks
+
+- [x] T023 [US1] Write Isaac Sim Overview in docs/module-3/isaac-sim-overview.md
+- [x] T024 [US1] Write Synthetic Data in docs/module-3/synthetic-data.md
+- [x] T025 [US1] Write Visual SLAM in docs/module-3/visual-slam.md
+- [x] T026 [US1] Write Sim-to-Real in docs/module-3/sim-to-real.md
+- [x] T027 [US1] Write LLMs in Robotics in docs/module-4/llms-in-robotics.md
+- [x] T028 [US1] Write Voice-to-Action in docs/module-4/voice-to-action.md
+- [x] T029 [US1] Write Cognitive Planning in docs/module-4/cognitive-planning.md
+- [x] T030 [US1] Write Action Sequencing in docs/module-4/action-sequencing.md
+
+### Navigation Setup
+
+- [x] T031 [US1] Update sidebars.js with 8 additional chapter entries
+- [ ] T032 [US1] Add next/previous chapter links to all 8 chapters
+
+**Dependencies**: Phase 3 complete
+**Parallel Execution**: T023-T030 can run in parallel
+
+---
+
+## Phase 5: US1 - Core Content (Modules 5-6)
+
+**Status**: COMPLETE
+
+**Goal**: Create 8 chapters (Hardware + Capstone) and complete all 25 chapters
+
+**Independent Test Criteria**:
+- All 25 chapters accessible
+- Complete book navigation works
+- Total content: 25 chapters with consistent structure
+
+### Chapter Writing Tasks
+
+- [x] T033 [US1] Write RTX Workstations in docs/module-5/rtx-workstations.md
+- [x] T034 [US1] Write Jetson Deployment in docs/module-5/jetson-deployment.md
+- [x] T035 [US1] Write Sensors & Actuators Hardware in docs/module-5/sensors-actuators-hardware.md
+- [x] T036 [US1] Write Lab Setup in docs/module-5/lab-setup.md
+- [x] T037 [US1] Write Capstone Architecture in docs/module-6/capstone-architecture.md
+- [x] T038 [US1] Write Integrated Flow in docs/module-6/integrated-flow.md
+- [x] T039 [US1] Write Evaluation Criteria in docs/module-6/evaluation-criteria.md
+- [x] T040 [US1] Write Real-World Deployment in docs/module-6/real-world-deployment.md
+
+### Navigation Setup
+
+- [x] T041 [US1] Update sidebars.js with 8 additional chapter entries
+- [ ] T042 [US1] Add next/previous chapter links to all 8 chapters
+
+**Dependencies**: Phase 4 complete
+**Parallel Execution**: T033-T040 can run in parallel
+
+---
+
+## Phase 6: US2 - Educator Navigation
+
+**Status**: PENDING
+
+**Goal**: Enhance navigation and search for educators
+
+**Independent Test Criteria**:
+- Sidebar shows all 25 chapters organized by module
+- Table of Contents visible on each page
+- Cross-references between related chapters
+
+### Navigation Enhancement
+
+- [ ] T043 [US2] Organize sidebar with collapsible category sections
+- [ ] T044 [US2] Add inline cross-references between related chapters
+- [ ] T045 [US2] Add glossary index and quick reference section
+- [ ] T046 [US2] Configure search plugin in docusaurus.config.js
+
+**Dependencies**: Phase 5 complete (all chapters must exist)
+**Parallel Execution**: T043-T046 can run in parallel
+
+---
+
+## Phase 7: US3 - Developer Content
+
+**Status**: PENDING
+
+**Goal**: Ensure technical depth for developers
+
+**Independent Test Criteria**:
+- Code examples work correctly
+- Architecture diagrams are clear
+- Developer can follow implementation steps
+
+### Technical Content Verification
+
+- [ ] T047 [US3] Review and verify all code snippets in chapters
+- [ ] T048 [US3] Ensure architecture diagrams follow consistent text format
+- [ ] T049 [US3] Add implementation tips for developers in key chapters
+- [ ] T050 [US3] Verify sim-to-real concepts are clearly explained
+
+**Dependencies**: Phase 6 complete
+**Parallel Execution**: T047-T050 can run in parallel
+
+---
+
+## Phase 8: Polish & Cross-Cutting
+
+**Status**: PENDING
+
+**Goal**: Final review, i18n, and deployment preparation
+
+### Final Polish
+
+- [ ] T051 Review all chapters for consistency (tone, formatting, length)
+- [ ] T052 Add Urdu translations for sidebar category labels in i18n/ur/docusaurus-plugin-content-docs/current.json
+- [ ] T053 Add Urdu translations for navigation elements in i18n/ur/docusaurus-theme-classic/
+- [ ] T054 Create 404 error page in src/pages/404.js
+- [ ] T055 Update README.md with complete book structure
+- [ ] T056 Run final build verification: `npm run build`
+- [ ] T057 Test GitHub Pages deployment workflow
+
+**Dependencies**: Phases 3-7 complete
+**Parallel Execution**: T051-T055 can run in parallel; T056-T057 sequential
+
+---
+
+## Parallel Execution Examples
+
+### Example 1: Chapter Writing Sprint (Phase 3)
+```
+Week 1:
+- Day 1-2: T012 (Intro) + T013-T016 (Module 1)
+- Day 3-4: T017-T020 (Module 2)
+- Day 5: T021-T022 (Navigation)
+```
+
+### Example 2: Modular Writing (Any Phase)
+```
+Parallel writers can work on:
+- T023 (Isaac Sim) + T027 (LLMs) - Different modules, no conflicts
+- T024 (Synthetic Data) + T028 (Voice-to-Action) - Independent files
+```
+
+### Example 3: Navigation Sprint (Phase 6)
+```
+All sidebar/UI tasks (T043-T046) can run in parallel
+after all chapter content is written.
+```
+
+---
+
 ## Implementation Strategy
 
-### MVP First (User Story 1 Only)
+### MVP Scope (User Story 1 Only)
 
-1. Complete Phase 1: Setup
-2. Complete Phase 2: Foundational (CRITICAL - blocks all stories)
-3. Complete Phase 3: User Story 1
-4. **STOP and VALIDATE**: Test User Story 1 independently
-5. Deploy/demo if ready
+**Minimum Viable Product**: Complete the book content with basic navigation.
+
+**Core Requirements**:
+- [x] 25 chapters written (Phases 3-5)
+- [x] Sidebar navigation working (T021, T031, T041)
+- [x] Build succeeds (T011, T056)
+
+**Out of Scope for MVP**:
+- Urdu translations (T052-T053) - Phase 8
+- Advanced search (T046) - Phase 6
+- Developer tips (T049) - Phase 7
 
 ### Incremental Delivery
 
-1. Complete Setup + Foundational → Foundation ready
-2. Add User Story 1 → Test independently → Deploy/Demo (MVP!)
-3. Add User Story 2 → Test independently → Deploy/Demo
-4. Add User Story 3 → Test independently → Deploy/Demo
-5. Add Final Content → Test completely → Deploy/Demo
-6. Add Polish → Final validation → Production ready
-7. Each story adds value without breaking previous stories
-
-### Parallel Team Strategy
-
-With multiple developers:
-
-1. Team completes Setup + Foundational together
-2. Once Foundational is done:
-   - Developer A: User Story 1
-   - Developer B: User Story 2
-   - Developer C: User Story 3
-   - Developer D: Final Content
-3. Stories complete and integrate independently
+1. **Sprint 1**: Phases 1-2 (Setup + Components) - COMPLETE
+2. **Sprint 2**: Phase 3 (Introduction + Modules 1-2, 9 chapters) - COMPLETE
+3. **Sprint 3**: Phase 4 (Modules 3-4, 8 chapters, total 17) - COMPLETE
+4. **Sprint 4**: Phase 5 (Modules 5-6, 8 chapters, total 25) - COMPLETE
+5. **Sprint 5**: Phases 6-8 (Polish, deploy, i18n)
 
 ---
-## Notes
 
-- [P] tasks = different files, no dependencies
-- [Story] label maps task to specific user story for traceability
-- Each user story should be independently completable and testable
-- Commit after each task or logical group
-- Stop at any checkpoint to validate story independently
-- Avoid: vague tasks, same file conflicts, cross-story dependencies that break independence
+## Task Summary by User Story
+
+| User Story | Tasks | Description |
+|------------|-------|-------------|
+| US1 | T012-T042 | Core content (25 chapters) + navigation |
+| US2 | T043-T046 | Educator navigation enhancements |
+| US3 | T047-T050 | Developer content verification |
+| Cross-cutting | T001-T011, T051-T057 | Setup, polish, deployment |
+
+**Total Tasks**: 57
+
+---
+
+## Book Structure Reference
+
+```
+Physical AI & Humanoid Robotics (25 chapters)
+├── Introduction (docs/intro.md)
+├── Module 1: The Robotic Nervous System (ROS 2)
+│   ├── intro-to-physical-ai.md
+│   ├── ros2-architecture.md
+│   ├── python-ai-agents.md
+│   └── humanoid-urdf.md
+├── Module 2: The Digital Twin (Gazebo & Unity)
+│   ├── gazebo-physics.md
+│   ├── urdf-vs-sdf.md
+│   ├── unity-robotics.md
+│   └── robot-sensors.md
+├── Module 3: The AI-Robot Brain (NVIDIA Isaac)
+│   ├── isaac-sim-overview.md
+│   ├── synthetic-data.md
+│   ├── visual-slam.md
+│   └── sim-to-real.md
+├── Module 4: Vision-Language-Action (VLA)
+│   ├── llms-in-robotics.md
+│   ├── voice-to-action.md
+│   ├── cognitive-planning.md
+│   └── action-sequencing.md
+├── Module 5: Hardware, Labs & Deployment
+│   ├── rtx-workstations.md
+│   ├── jetson-deployment.md
+│   ├── sensors-actuators-hardware.md
+│   └── lab-setup.md
+└── Module 6: Capstone Project
+    ├── capstone-architecture.md
+    ├── integrated-flow.md
+    ├── evaluation-criteria.md
+    └── real-world-deployment.md
+```
+
+---
+
+## Validation Checklist
+
+- [x] All tasks follow checklist format: `- [ ] TaskID [P] [Story] Description with file path`
+- [x] Task IDs are sequential in execution order
+- [x] Parallel tasks marked with [P]
+- [x] User story tasks labeled with [US1], [US2], [US3]
+- [x] File paths included in each task description
+- [x] Dependencies clearly stated for each phase
+- [x] Independent test criteria provided for each phase
+- [x] Parallel execution examples included
+- [x] MVP scope identified
