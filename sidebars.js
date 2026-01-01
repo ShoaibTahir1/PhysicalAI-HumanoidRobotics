@@ -4,26 +4,6 @@ const sidebars = {
   tutorialSidebar: [
     {
       type: 'category',
-      label: 'Physical AI & Humanoid Robotics',
-      items: [
-        'intro',
-        'embodied-intelligence',
-        'software-to-motion',
-        'sensors',
-        'actuators',
-        'humanoid-structure',
-        'balance-walking-posture',
-        'urdf',
-        'ai-models',
-        'simulation-vs-real-world',
-        'safety-ethical-considerations',
-        'future-humanoid-robotics',
-        'glossary',
-        'final-summary'
-      ],
-    },
-    {
-      type: 'category',
       label: 'Module 1: The Robotic Nervous System (ROS 2)',
       items: [
         'module-1/intro-to-physical-ai',
@@ -70,6 +50,16 @@ const sidebars = {
         'module-5/jetson-deployment',
         'module-5/sensors-actuators-hardware',
         'module-5/lab-setup',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Module 6: Capstone Project',
+      items: [
+        'module-6/capstone-architecture',
+        'module-6/integrated-flow',
+        'module-6/evaluation-criteria',
+        'module-6/real-world-deployment',
       ],
     },
   ],

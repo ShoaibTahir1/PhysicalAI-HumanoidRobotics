@@ -11,9 +11,11 @@ Sensors are the eyes and ears of a humanoid robot. They provide the raw data nee
 - **IMU**: Measures acceleration and angular velocity, critical for maintaining balance in humanoids.
 
 ## Architecture Diagram
+```text
 [Environment] -> [Sensors] -> [Raw Data (LaserScan/Image)] -> [Processing Node]
       |                                                        |
       +------------------< [Feedback Loop (IMU)] <------------+
+```
 
 ## Tooling Stack
 - OpenCV (Image processing)

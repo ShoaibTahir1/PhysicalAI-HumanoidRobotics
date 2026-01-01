@@ -8,9 +8,11 @@ sidebar_position: 8
 Unity is moving beyond gaming into the realm of "Industrial Metaverse." For humanoid robotics, Unity offers superior visual rendering and a robust physics engine (PhysX) tailored for Human-Robot Interaction (HRI). It allows developers to simulate complex social environments where humans and robots coexist, testing safety protocols and gesture recognition in a visually rich environment.
 
 ## Architecture Diagram
+```text
 [Unity Editor] <--> [ROS-TCP-Connector] <--> [ROS 2 Node]
        |                      |
 [C# Scripts (HRI)]     [Sensors/Actuators Message Passing]
+```
 
 ## Tooling Stack
 - Unity Engine (LTS)

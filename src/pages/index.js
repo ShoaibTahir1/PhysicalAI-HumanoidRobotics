@@ -26,7 +26,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
+            to="/docs/module-1/intro-to-physical-ai">
             <Translate id="homepage.readBookButton" description="Button text to read the book">
               Read the Book - 5min ⏱️
             </Translate>
@@ -55,75 +55,193 @@ export default function Home() {
       <main>
         <section className={styles.features}>
           <div className="container">
+            <h2 className={clsx('text--center', styles.featuresTitle)}>
+              <Translate id="homepage.modules.title" description="Title for modules section">
+                Complete Learning Path
+              </Translate>
+            </h2>
             <div className="row">
               <div className="col col--4">
-                <h3>
-                  <Translate id="homepage.physicalAI.title" description="Title for Physical AI section">
-                    Physical AI
-                  </Translate>
-                </h3>
-                <div className="text--center">
-                  <img
-                    src="/img/chapters/software-to-motion.jpg"
-                    alt={translate({
-                      id: 'homepage.physicalAI.imageAlt',
-                      description: 'Alt text for Physical AI image',
-                      message: 'Physical AI'
-                    })}
-                    className={styles.featureSvg}
-                  />
-                </div>
-                <p>
-                  <Translate id="homepage.physicalAI.description" description="Description for Physical AI section">
-                    Learn how artificial intelligence controls physical systems and robots
-                  </Translate>
-                </p>
+                <Link
+                  to="/docs/module-1/intro-to-physical-ai"
+                  className={styles.featureCardLink}
+                >
+                  <div className={styles.featureCard}>
+                    <h3>
+                      <Translate id="homepage.module1.title" description="Title for Module 1 section">
+                        Module 1: The Robotic Nervous System (ROS 2)
+                      </Translate>
+                    </h3>
+                    <div className="text--center">
+                      <img
+                        src="/img/chapters/robot-sensors.jpg"
+                        alt={translate({
+                          id: 'homepage.module1.imageAlt',
+                          description: 'Alt text for ROS 2 image',
+                          message: 'ROS 2 Architecture'
+                        })}
+                        className={clsx(styles.featureSvg, styles.featureImage)}
+                      />
+                    </div>
+                    <p>
+                      <Translate id="homepage.module1.description" description="Description for Module 1 section">
+                        Building the communication infrastructure for robotics
+                      </Translate>
+                    </p>
+                  </div>
+                </Link>
               </div>
               <div className="col col--4">
-                <h3>
-                  <Translate id="homepage.humanoidRobotics.title" description="Title for Humanoid Robotics section">
-                    Humanoid Robotics
-                  </Translate>
-                </h3>
-                <div className="text--center">
-                  <img
-                    src="/img/chapters/humanoid-structure.jpg"
-                    alt={translate({
-                      id: 'homepage.humanoidRobotics.imageAlt',
-                      description: 'Alt text for Humanoid Robotics image',
-                      message: 'Humanoid Robotics'
-                    })}
-                    className={styles.featureSvg}
-                  />
-                </div>
-                <p>
-                  <Translate id="homepage.humanoidRobotics.description" description="Description for Humanoid Robotics section">
-                    Understand how robots with human-like structure function and move
-                  </Translate>
-                </p>
+                <Link
+                  to="/docs/module-2/gazebo-physics"
+                  className={styles.featureCardLink}
+                >
+                  <div className={styles.featureCard}>
+                    <h3>
+                      <Translate id="homepage.module2.title" description="Title for Module 2 section">
+                        Module 2: The Digital Twin (Gazebo & Unity)
+                      </Translate>
+                    </h3>
+                    <div className="text--center">
+                      <img
+                        src="/img/chapters/sim-vs-real.jpg"
+                        alt={translate({
+                          id: 'homepage.module2.imageAlt',
+                          description: 'Alt text for Gazebo image',
+                          message: 'Gazebo Physics Simulation'
+                        })}
+                        className={clsx(styles.featureSvg, styles.featureImage)}
+                      />
+                    </div>
+                    <p>
+                      <Translate id="homepage.module2.description" description="Description for Module 2 section">
+                        Simulating physics before moving to hardware
+                      </Translate>
+                    </p>
+                  </div>
+                </Link>
               </div>
               <div className="col col--4">
-                <h3>
-                  <Translate id="homepage.educationalFocus.title" description="Title for Educational Focus section">
-                    Educational Focus
-                  </Translate>
-                </h3>
-                <div className="text--center">
-                  <img
-                    src="/img/chapters/embodied-intelligence.jpg"
-                    alt={translate({
-                      id: 'homepage.educationalFocus.imageAlt',
-                      description: 'Alt text for Educational Focus image',
-                      message: 'Educational Focus'
-                    })}
-                    className={styles.featureSvg}
-                  />
-                </div>
-                <p>
-                  <Translate id="homepage.educationalFocus.description" description="Description for Educational Focus section">
-                    Designed for beginners with simple language and real-life examples
-                  </Translate>
-                </p>
+                <Link
+                  to="/docs/module-3/isaac-sim-overview"
+                  className={styles.featureCardLink}
+                >
+                  <div className={styles.featureCard}>
+                    <h3>
+                      <Translate id="homepage.module3.title" description="Title for Module 3 section">
+                        Module 3: The AI-Robot Brain (NVIDIA Isaac)
+                      </Translate>
+                    </h3>
+                    <div className="text--center">
+                      <img
+                        src="/img/chapters/embodied-intelligence.jpg"
+                        alt={translate({
+                          id: 'homepage.module3.imageAlt',
+                          description: 'Alt text for Isaac Sim image',
+                          message: 'NVIDIA Isaac Sim'
+                        })}
+                        className={clsx(styles.featureSvg, styles.featureImage)}
+                      />
+                    </div>
+                    <p>
+                      <Translate id="homepage.module3.description" description="Description for Module 3 section">
+                        High-fidelity AI acceleration for robotics
+                      </Translate>
+                    </p>
+                  </div>
+                </Link>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col col--4">
+                <Link
+                  to="/docs/module-4/llms-in-robotics"
+                  className={styles.featureCardLink}
+                >
+                  <div className={styles.featureCard}>
+                    <h3>
+                      <Translate id="homepage.module4.title" description="Title for Module 4 section">
+                        Module 4: Vision-Language-Action (VLA)
+                      </Translate>
+                    </h3>
+                    <div className="text--center">
+                      <img
+                        src="/img/chapters/robot-sensors.jpg"
+                        alt={translate({
+                          id: 'homepage.module4.imageAlt',
+                          description: 'Alt text for VLA image',
+                          message: 'Vision-Language-Action Architecture'
+                        })}
+                        className={clsx(styles.featureSvg, styles.featureImage)}
+                      />
+                    </div>
+                    <p>
+                      <Translate id="homepage.module4.description" description="Description for Module 4 section">
+                        Teaching robots to understand and act on natural language
+                      </Translate>
+                    </p>
+                  </div>
+                </Link>
+              </div>
+              <div className="col col--4">
+                <Link
+                  to="/docs/module-5/rtx-workstations"
+                  className={styles.featureCardLink}
+                >
+                  <div className={styles.featureCard}>
+                    <h3>
+                      <Translate id="homepage.module5.title" description="Title for Module 5 section">
+                        Module 5: Hardware & Lab Architecture
+                      </Translate>
+                    </h3>
+                    <div className="text--center">
+                      <img
+                        src="/img/chapters/humanoid-structure.jpg"
+                        alt={translate({
+                          id: 'homepage.module5.imageAlt',
+                          description: 'Alt text for Hardware image',
+                          message: 'Hardware Setup'
+                        })}
+                        className={clsx(styles.featureSvg, styles.featureImage)}
+                      />
+                    </div>
+                    <p>
+                      <Translate id="homepage.module5.description" description="Description for Module 5 section">
+                        The physical workstations and edge computers (Jetson) needed
+                      </Translate>
+                    </p>
+                  </div>
+                </Link>
+              </div>
+              <div className="col col--4">
+                <Link
+                  to="/docs/module-6/capstone-architecture"
+                  className={styles.featureCardLink}
+                >
+                  <div className={styles.featureCard}>
+                    <h3>
+                      <Translate id="homepage.module6.title" description="Title for Module 6 section">
+                        Module 6: Capstone – Autonomous Humanoid
+                      </Translate>
+                    </h3>
+                    <div className="text--center">
+                      <img
+                        src="/img/chapters/future-humanoid.jpg"
+                        alt={translate({
+                          id: 'homepage.module6.imageAlt',
+                          description: 'Alt text for Humanoid image',
+                          message: 'Autonomous Humanoid Robot'
+                        })}
+                        className={clsx(styles.featureSvg, styles.featureImage)}
+                      />
+                    </div>
+                    <p>
+                      <Translate id="homepage.module6.description" description="Description for Module 6 section">
+                        Bringing it all together into an integrated system
+                      </Translate>
+                    </p>
+                  </div>
+                </Link>
               </div>
             </div>
           </div>

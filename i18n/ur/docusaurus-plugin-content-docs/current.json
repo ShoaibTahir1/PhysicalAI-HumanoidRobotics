@@ -26,5 +26,9 @@
   "sidebar.tutorialSidebar.category.Module 5: Hardware, Labs & Deployment": {
     "message": "ماڈیول 5: ہارڈ ویئر، لیبز اور تعیناتی (Hardware, Labs & Deployment)",
     "description": "The label for category 'Module 5: Hardware, Labs & Deployment' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Module 6: Capstone Project": {
+    "message": "ماڈیول 6: کیپ اسٹون پروجیکٹ (Capstone Project)",
+    "description": "The label for category 'Module 6: Capstone Project' in sidebar 'tutorialSidebar'"
   }
 }

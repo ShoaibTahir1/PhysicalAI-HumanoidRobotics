@@ -8,6 +8,8 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
 }
 
 @media screen and (max-width: 996px) {
@@ -25,27 +27,114 @@
 .features {
   display: flex;
   align-items: center;
-  padding: 2rem 0;
+  padding: 4rem 0;
   width: 100%;
+  background-color: #f8f9fa;
+}
+
+.featuresTitle {
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  font-weight: bold;
 }
 
 .featureSvg {
-  height: 200px;
-  width: 200px;
+  height: 180px;
+  width: 180px;
   object-fit: cover;
   border-radius: 8px;
   display: block;
   margin: 1rem auto;
+  transition: transform 0.3s ease;
 }
 
-/* Add space below the heading */
-.col h3 {
+.featureSvg:hover {
+  transform: scale(1.05);
+}
+
+.featureImage {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border: 2px solid #e9ecef;
+}
+
+.featureCardLink {
+  text-decoration: none;
+  display: block;
+  flex: 1;
+}
+
+.featureCard {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: inherit;
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.featureCardLink:hover .featureCard {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  color: inherit;
+}
+
+.featureCard h3 {
   margin-bottom: 1rem;
   text-align: center;
+  color: #2c3e50;
+  font-size: 1.25rem;
+  line-height: 1.4;
 }
 
-/* Add space above the paragraph */
-.col p {
+.featureCard p {
   margin-top: 1rem;
   text-align: center;
+  color: #6c757d;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive design */
+@media screen and (max-width: 996px) {
+  .features {
+    padding: 2rem 0;
+  }
+
+  .featuresTitle {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .featureCard {
+    margin: 0.5rem;
+    padding: 1.5rem;
+  }
+
+  .featureSvg {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .featureCard h3 {
+    font-size: 1.1rem;
+  }
+
+  .featureCard p {
+    font-size: 0.9rem;
+  }
 }
